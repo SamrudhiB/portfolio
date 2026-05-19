@@ -17,8 +17,9 @@ const app = express();
 // === MIDDLEWARE ===
 
 // CORS: Allow frontend to talk to backend
+// During deployment, this allows requests from the frontend.
 app.use(cors({
-    origin: 'http://localhost:8000',  // Frontend URL
+    origin: true,
     credentials: true
 }));
 
