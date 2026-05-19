@@ -1,0 +1,7 @@
+# Don't upload these to GitHub
+node_modules/
+.env
+.DS_Store
+*.log
+dist/
+build/
